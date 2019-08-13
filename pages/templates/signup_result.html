@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'signup.css' %}">
+</head>
+<body>
+  {% if flag == True %}
+  <h1>{{username}}님 가입을 축하드립니다.</h1>
+  {% else %}
+  <h1>패스워드를 다시 확인해 주세요</h1>
+  {% endif %}
+</body>
+</html>
