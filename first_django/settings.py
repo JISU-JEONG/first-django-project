@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'pages', # app 등록!
     'services',
+    'num',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,6 +57,8 @@ ROOT_URLCONF = 'first_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # 만약 app 폴더의 templates 폴더가 아닌 곳에서 템플릿 파일을 관리하려면
+        # 아래의 DIRS에 추가한다!
         'DIRS': [
             # BASE_DIR은 16번째 줄에 정의된 변수 - 현재 프로젝트 폴더 위치를 뜻한다.
             # first-django-project 폴더임
